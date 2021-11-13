@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <script src="calc.js"></script> -->
+    <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.6/js/jsplumb.min.js"
+      integrity="sha512-yGgPLFnBGQP4L4+2eTbGj0uLoq+CLXmP2+c/hXWdmLYB9jEBfVGjxIqtvFneLCKATOZhDf2YPYG4uSEksWXp+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* .GeneratedTable {
+        text-align: center;
+      } */
+      .input-area {
+        border-style: none;
+      }
+      table.GeneratedTable {
+        text-align: center;
+        width: 100%;
+        background-color: #ffffff;
+        border-collapse: collapse;
+        border-width: 2px;
+        border-color: #161511;
+        border-style: groove;
+        color: #000000;
+      }
+
+      table.GeneratedTable td,
+      table.GeneratedTable th {
+        border-width: 2px;
+        border-color: #161511;
+        border-style: groove;
+        padding: 3px;
+      }
+
+      table.GeneratedTable thead {
+        background-color: #fbff00;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <img src="itnu.png" alt="" srcset="" />
+        <h2 class="mae-lab">2EC701 MAE Virtual Lab</h2>
+      </div>
+      <div class="navbar">
+        <ul class="navbar">
+          <li class="nav-items">HOME</li>
+          <li class="nav-items">PARTNERS</li>
+          <li class="nav-items">CONTACT US</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="list">
+        <ul class="req">
+          <a href="index.html">
+            <li class="req-list">Aim</li>
+          </a>
+          <a href="requirement.html">
+            <li class="req-list">Requirements</li>
+          </a>
+          <a href="theory.html">
+            <li class="req-list">Theory</li>
+          </a>
+          <a href="procedure.html">
+            <li class="req-list">Procedure</li>
+          </a>
+          <a href="simulation.html">
+            <li class="req-list">Observation And Simulation</li>
+          </a>
+          <a href="observation.html">
+            <li class="req-list">Conclusion</li>
+          </a>
+          <a href="post_lab.html">
+            <li class="req-list">Post-lab quiz</li>
+          </a>
+        </ul>
+      </div>
+      <div class="page">
+        <table class="GeneratedTable">
+          <thead>
+            <tr>
+              <th>Sr No</th>
+              <th>Voltage (volts)</th>
+              <th>Current (mA)</th>
+              <th>Voltage (volts)</th>
+              <th>Current (mA)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><input class="input-area" type="text" name="" id="v1" /></td>
+              <td><input class="input-area" type="text" name="" id="c1" /></td>
+              <td><input class="input-area" type="text" name="" id="a1" /></td>
+              <td><input class="input-area" type="text" name="" id="b1" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><input class="input-area" type="text" name="" id="v2" /></td>
+              <td><input class="input-area" type="text" name="" id="c2" /></td>
+              <td><input class="input-area" type="text" name="" id="a2" /></td>
+              <td><input class="input-area" type="text" name="" id="b2" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><input class="input-area" type="text" name="" id="v3" /></td>
+              <td><input class="input-area" type="text" name="" id="c3" /></td>
+              <td><input class="input-area" type="text" name="" id="a3" /></td>
+              <td><input class="input-area" type="text" name="" id="b3" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><input class="input-area" type="text" name="" id="v4" /></td>
+              <td><input class="input-area" type="text" name="" id="c4" /></td>
+              <td><input class="input-area" type="text" name="" id="a4" /></td>
+              <td><input class="input-area" type="text" name="" id="b4" /></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><input class="input-area" type="text" name="" id="v5" /></td>
+              <td><input class="input-area" type="text" name="" id="c5" /></td>
+              <td><input class="input-area" type="text" name="" id="a5" /></td>
+              <td><input class="input-area" type="text" name="" id="b5" /></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><input class="input-area" type="text" name="" id="v6" /></td>
+              <td><input class="input-area" type="text" name="" id="c6" /></td>
+              <td><input class="input-area" type="text" name="" id="a6" /></td>
+              <td><input class="input-area" type="text" name="" id="b6" /></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td><input class="input-area" type="text" name="" id="v7" /></td>
+              <td><input class="input-area" type="text" name="" id="c7" /></td>
+              <td><input class="input-area" type="text" name="" id="a7" /></td>
+              <td><input class="input-area" type="text" name="" id="b7" /></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td><input class="input-area" type="text" name="" id="v8" /></td>
+              <td><input class="input-area" type="text" name="" id="c8" /></td>
+              <td><input class="input-area" type="text" name="" id="a8" /></td>
+              <td><input class="input-area" type="text" name="" id="b8" /></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td><input class="input-area" type="text" name="" id="v9" /></td>
+              <td><input class="input-area" type="text" name="" id="c9" /></td>
+              <td><input class="input-area" type="text" name="" id="a9" /></td>
+              <td><input class="input-area" type="text" name="" id="b9" /></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td><input class="input-area" type="text" name="" id="v10" /></td>
+              <td><input class="input-area" type="text" name="" id="c10" /></td>
+              <td><input class="input-area" type="text" name="" id="a10" /></td>
+              <td><input class="input-area" type="text" name="" id="b10" /></td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td><input class="input-area" type="text" name="" id="v11" /></td>
+              <td><input class="input-area" type="text" name="" id="c11" /></td>
+              <td><input class="input-area" type="text" name="" id="a11" /></td>
+              <td><input class="input-area" type="text" name="" id="b11" /></td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td><input class="input-area" type="text" name="" id="v12" /></td>
+              <td><input class="input-area" type="text" name="" id="c12" /></td>
+              <td><input class="input-area" type="text" name="" id="a12" /></td>
+              <td><input class="input-area" type="text" name="" id="b12" /></td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td><input class="input-area" type="text" name="" id="v13" /></td>
+              <td><input class="input-area" type="text" name="" id="c13" /></td>
+              <td><input class="input-area" type="text" name="" id="a13" /></td>
+              <td><input class="input-area" type="text" name="" id="b13" /></td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td><input class="input-area" type="text" name="" id="v14" /></td>
+              <td><input class="input-area" type="text" name="" id="c14" /></td>
+              <td><input class="input-area" type="text" name="" id="a14" /></td>
+              <td><input class="input-area" type="text" name="" id="b14" /></td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td><input class="input-area" type="text" name="" id="v15" /></td>
+              <td><input class="input-area" type="text" name="" id="c15" /></td>
+              <td><input class="input-area" type="text" name="" id="a15" /></td>
+              <td><input class="input-area" type="text" name="" id="b15" /></td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td><input class="input-area" type="text" name="" id="v16" /></td>
+              <td><input class="input-area" type="text" name="" id="c16" /></td>
+              <td><input class="input-area" type="text" name="" id="a16" /></td>
+              <td><input class="input-area" type="text" name="" id="b16" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <button onclick="calc()" class="calc">Plot Graph</button>
+        <div
+          class="graph"
+          id="tester"
+          style="width: 1000px; height: 400px;"
+        ></div>
+      </div>
+    </div>
+    <script>
+      // TESTER = document.getElementById("tester");
+      var voltage1 = [];
+      var current1 = [];
+      var voltage2 = [];
+      var current2 = [];
+      function calc() {
+        for (let i = 1; i <= 16; i++) {
+          var vstr = document.getElementById("v" + i).value;
+          var cstr = document.getElementById("c" + i).value;
+          var astr = document.getElementById("a" + i).value;
+          var bstr = document.getElementById("b" + i).value;
+
+          // if (a === undefined) {
+          //   alert("Please enter all the values");
+          // }
+          // if (b === undefined) {
+          //   alert("Please enter all the values");
+          // }
+          // if (c === undefined) {
+          //   alert("Please enter all the values");
+          // }
+          // if (v === undefined) {
+          //   alert("Please enter all the values");
+          // }
+          var v = parseInt(vstr);
+          var c = parseInt(cstr);
+          var a = parseInt(astr);
+          var b = parseInt(bstr);
+          voltage1.push(v);
+          current1.push(c);
+          voltage2.push(a);
+          current2.push(b);
+        }
+        console.log(voltage1);
+        console.log(typeof voltage1[0]);
+        // console.log(typeof(voltage1));
+
+        // console.log(voltage1);
+        // console.log(current1);
+        // console.log(voltage2);
+        // console.log(current2);
+        // Plotly.newPlot(
+        //   TESTER,
+        //   [
+        //     {
+        //       x: voltage1,
+        //       y: current1
+        //     }
+        //   ],
+        //   {
+        //     margin: { t: 0 }
+        //   }
+        // );
+        var data = [
+          {
+            x: voltage1,
+            y: current1,
+            mode: "line1"
+          }
+        ];
+        var layout = {
+          xaxis: { range: [0, 20], title: "Voltage" },
+          yaxis: { range: [0, 500], title: "Current" },
+          title: "VI characteristics"
+        };
+        Plotly.newPlot("tester", data, layout);
+      }
+    </script>
+  </body>
+</html>
